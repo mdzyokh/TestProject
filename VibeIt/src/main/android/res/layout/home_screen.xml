@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:vibeit="http://schemas.android.com/apk/res/com.vibeit"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/blue_background">
+
+    <include android:id="@+id/header_cap"
+             layout="@layout/header_cap"
+             android:layout_alignParentTop="true"/>
+
+    <LinearLayout android:id="@+id/top_panel"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_below="@id/header_cap"
+                  android:padding="10dp"
+                  android:gravity="center_vertical">
+
+        <ImageButton android:id="@+id/btn_filter"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/btn_blue_homescreen_selector"
+                     android:src="@drawable/ic_filter_button"
+                     android:paddingTop="8dp"
+                     android:paddingBottom="8dp"
+                     android:paddingLeft="12dp"
+                     android:paddingRight="12dp"/>
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/logo_small"
+                   android:layout_weight="1"/>
+
+        <FrameLayout android:layout_width="wrap_content"
+                     android:layout_height="wrap_content">
+
+            <ImageButton android:id="@+id/btn_profile"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:background="@drawable/btn_blue_homescreen_selector"
+                         android:src="@drawable/ic_account_profile"
+                         android:paddingTop="8dp"
+                         android:paddingBottom="8dp"
+                         android:paddingLeft="12dp"
+                         android:paddingRight="12dp"/>
+
+            <com.vibeit.widget.CustomFontButton
+                    android:id="@+id/btn_log_in"
+                    style="@style/ActionBarTextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_login"
+                    android:paddingRight="12dp"
+                    android:paddingLeft="12dp"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View android:id="@+id/divider"
+          android:layout_height="2px"
+          android:layout_width="fill_parent"
+          android:background="@drawable/divider_vendor_top"
+          android:layout_below="@id/top_panel"
+          android:layout_marginRight="10dp"
+          android:layout_marginLeft="10dp"/>
+
+    <com.vibeit.widget.CustomFontEditText
+            android:id="@+id/search_field"
+            android:layout_below="@id/divider"
+            style="@style/SearchInputField"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:inputType="textNoSuggestions|textFilter|textCapSentences"/>
+
+    <com.vibeit.widget.CustomFontEditText
+            android:id="@+id/search_location_field"
+            android:layout_below="@id/search_field"
+            style="@style/SearchInputField"
+            android:drawableLeft="@null"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            android:hint="Current location"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:inputType="textNoSuggestions|textFilter|textCapSentences"/>
+
+    <include android:id="@+id/footer_cap"
+             layout="@layout/footer_cap"
+             android:layout_alignParentBottom="true"/>
+
+    <com.astuetz.viewpager.extensions.FixedTabsView
+            android:id="@+id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_location_field"
+            vibeit:dividerColor="@color/medium_gray"/>
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/tabs"
+            android:layout_above="@id/footer_cap"/>
+
+</RelativeLayout>

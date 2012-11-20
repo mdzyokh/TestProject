@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:vibeit="http://schemas.android.com/apk/res/com.vibeit"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_below="@id/top_panel">
+
+    <View android:id="@+id/top_divider"
+          android:layout_height="2px"
+          android:layout_width="fill_parent"
+          android:background="@drawable/divider_vendor_top"
+          android:layout_marginRight="10dp"
+          android:layout_marginLeft="10dp"/>
+
+
+    <RelativeLayout android:id="@+id/company_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp">
+
+        <LinearLayout android:id="@+id/logo_container"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/bkg_venue_details"
+                      android:layout_alignParentLeft="true"
+                      android:layout_marginRight="10dp"
+                      android:padding="10dp">
+
+            <ImageView android:id="@+id/company_logo"
+                       android:layout_width="85dp"
+                       android:layout_height="85dp"
+                       android:src="@drawable/location_logo_placeholder"
+                       android:contentDescription="company logo"
+                       android:background="@android:color/white"
+                       android:scaleType="fitCenter"/>
+        </LinearLayout>
+
+        <com.vibeit.widget.CustomFontTextView
+                android:id="@+id/company_name"
+                style="@style/CompanyNameTextAppearance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/logo_container"
+                android:layout_alignTop="@id/logo_container"
+                android:text="Lighthouse Coffee Shop"
+                android:layout_marginBottom="5dp"/>
+
+        <com.vibeit.widget.CustomFontTextView
+                android:id="@+id/company_address"
+                style="@style/CompanyAddressTextAppearance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/logo_container"
+                android:layout_below="@id/company_name"
+                android:text="510 Tuttle Creek Blvd. Manhattan, KS 6502"/>
+
+        <LinearLayout android:id="@+id/rating_bar_container"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/bkg_venue_details"
+                      android:paddingLeft="3dp"
+                      android:paddingRight="3dp"
+                      android:layout_toRightOf="@id/logo_container"
+                      android:layout_alignBottom="@id/logo_container">
+
+            <RatingBar android:id="@+id/rating_bar"
+                       style="@style/CompanyDetailsRatingBar"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerVertical="true"
+                       android:rating="4"/>
+
+
+        </LinearLayout>
+
+        <com.vibeit.widget.CustomFontTextView
+                android:id="@+id/vibe_count"
+                style="@style/VibesCountTextAppearance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rating_bar_container"
+                android:layout_alignRight="@id/rating_bar_container"
+                android:layout_marginTop="5dp"
+                android:text="(25 vibes)"/>
+
+
+        <Button android:id="@+id/btn_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/map_btn_selector"
+                android:layout_toRightOf="@id/rating_bar_container"
+                android:layout_alignBottom="@id/rating_bar_container"
+                android:layout_marginLeft="5dp"/>
+
+        <com.vibeit.widget.CustomFontTextView
+                android:id="@+id/vibe_count"
+                style="@style/VibesCountTextAppearance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_map"
+                android:layout_alignLeft="@id/btn_map"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="Map"/>
+
+    </RelativeLayout>
+
+    <View android:id="@+id/bottom_divider"
+          android:layout_height="2px"
+          android:layout_width="fill_parent"
+          android:background="@drawable/divider_vendor_under"
+          android:layout_marginRight="10dp"
+          android:layout_marginLeft="10dp"/>
+
+    <LinearLayout android:id="@+id/vibeit_reward_teaser"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:gravity="center_horizontal"
+                  android:background="@drawable/reward_teaser_bkg"
+                  android:layout_marginTop="10dp">
+
+        <com.vibeit.widget.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIBE IT REWARD | COMPLETE SURVEY"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                vibeit:typeface="ArialRoundedMTBold.ttf"
+                android:singleLine="true"
+                android:layout_marginTop="10dp"/>
+
+        <com.vibeit.widget.CustomFontTextView
+                android:id="@+id/reward_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Free meduim coffee ($2.00 value)"
+                android:textSize="14dp"
+                android:textColor="@android:color/white"
+                android:singleLine="true"
+                vibeit:typeface="Helvetica_Oblique.ttf"/>
+    </LinearLayout>
+
+</LinearLayout>

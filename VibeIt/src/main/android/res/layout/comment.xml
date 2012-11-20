@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:vibeit="http://schemas.android.com/apk/res/com.vibeit"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:padding="5dp">
+
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:background="@drawable/bkg_comment"
+                  android:orientation="vertical"
+                  android:padding="5dp">
+
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_margin="5dp">
+
+
+            <com.vibeit.widget.CustomFontTextView
+                    android:id="@+id/author_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/list_item_text_color"
+                    vibeit:typeface="Helvetica_Bold.ttf"
+                    android:singleLine="true"
+                    android:layout_marginRight="5dp"/>
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/ic_comment"/>
+
+            <com.vibeit.widget.CustomFontTextView
+                    android:id="@+id/date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:gravity="right"
+                    android:textColor="@color/list_item_text_color"
+                    vibeit:typeface="HelveticaNeue-LightItalic.otf"
+                    android:singleLine="true"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center_vertical"
+                      android:padding="3dp">
+
+            <RatingBar android:id="@+id/overall_rating"
+                       style="@style/CommentRatingBar"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginRight="5dp"
+                       android:max="5"
+                       android:rating="4"/>
+
+            <com.vibeit.widget.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vibe-It Rating"
+                    android:textSize="12dp"
+                    android:textColor="#f97d00"
+                    android:textStyle="bold"
+                    vibeit:typeface="Helvetica_Bold.ttf"
+                    android:singleLine="true"
+                    android:layout_weight="1"/>
+
+            <ImageView android:id="@+id/expandable_toggle_button"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/toggle_arrow_down"
+                       android:layout_margin="5dp"
+                       android:layout_gravity="right|bottom"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/expandable"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <TableLayout
+                    android:id="@+id/category_ratings"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp">
+
+                    <RatingBar android:id="@+id/speed_of_service"
+                               style="@style/CommentRatingBar"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginRight="5dp"
+                               android:max="5"
+                               android:rating="4"/>
+
+                    <com.vibeit.widget.CustomFontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Speed of Service"
+                            android:textSize="12dp"
+                            android:textColor="@color/list_item_text_color"
+                            android:textStyle="bold"
+                            vibeit:typeface="Helvetica_Bold.ttf"
+                            android:singleLine="true"
+                            android:layout_weight="1"/>
+                </TableRow>
+
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp">
+
+                    <RatingBar android:id="@+id/professionalisn_of_staff"
+                               style="@style/CommentRatingBar"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginRight="5dp"
+                               android:max="5"/>
+
+                    <com.vibeit.widget.CustomFontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Professionalism of Staff"
+                            android:textSize="12dp"
+                            android:textColor="@color/list_item_text_color"
+                            android:textStyle="bold"
+                            vibeit:typeface="Helvetica_Bold.ttf"
+                            android:singleLine="true"
+                            android:layout_weight="1"/>
+                </TableRow>
+
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp">
+
+                    <RatingBar android:id="@+id/cleanlines_of_business"
+                               style="@style/CommentRatingBar"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginRight="5dp"
+                               android:max="5"
+                               android:rating="4"/>
+
+                    <com.vibeit.widget.CustomFontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cleanliness of business"
+                            android:textSize="12dp"
+                            android:textColor="@color/list_item_text_color"
+                            android:textStyle="bold"
+                            vibeit:typeface="Helvetica_Bold.ttf"
+                            android:singleLine="true"
+                            android:layout_weight="1"/>
+                </TableRow>
+
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp">
+
+                    <RatingBar android:id="@+id/value_of_product"
+                               style="@style/CommentRatingBar"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginRight="5dp"
+                               android:max="5"
+                               android:rating="4"/>
+
+                    <com.vibeit.widget.CustomFontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Value of Product/Service"
+                            android:textSize="12dp"
+                            android:textColor="@color/list_item_text_color"
+                            android:textStyle="bold"
+                            vibeit:typeface="Helvetica_Bold.ttf"
+                            android:singleLine="true"
+                            android:layout_weight="1"/>
+                </TableRow>
+
+            </TableLayout>
+            <com.vibeit.widget.CustomFontTextView
+                    android:id="@+id/comment_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:textColor="@color/list_item_text_color"
+                    vibeit:typeface="Helvetica_Bold.ttf"
+                    android:layout_margin="5dp"/>
+            <ImageView android:id="@+id/collapse_toggle_button"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/toggle_arrow_up"
+                       android:layout_margin="5dp"
+                       android:layout_gravity="right"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

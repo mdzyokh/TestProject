@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:vibeit="http://schemas.android.com/apk/res/com.vibeit"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="@drawable/gray_background">
+
+    <View android:id="@+id/header_cap"
+          android:background="#f97d00"
+          android:layout_width="fill_parent"
+          android:layout_height="5px"/>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/venue_title_bar_bg"
+            android:padding="10dp">
+
+        <ImageButton android:id="@+id/btn_close"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/cancel_button"
+                     android:layout_alignParentRight="true"
+                     android:layout_centerVertical="true"/>
+
+        <com.vibeit.widget.CustomFontTextView
+                android:id="@+id/company_name"
+                style="@style/VenueNameTextAppearance"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Lighthouse Coffee Shop"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/btn_close"/>
+
+    </RelativeLayout>
+
+    <LinearLayout android:id="@+id/reward_teaser"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:gravity="center_horizontal"
+                  android:background="@drawable/reward_bg"
+                  android:padding="15dp">
+
+        <com.vibeit.widget.CustomFontTextView
+                style="@style/RewardTeaserTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COMPLETE SURVEY &amp; RECEIVE"
+                android:singleLine="true"/>
+
+
+        <com.vibeit.widget.CustomFontTextView
+                style="@style/RewardTeaserText"
+                android:id="@+id/reward_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Free meduim coffee ($2.00 value)"
+                android:singleLine="true"/>
+    </LinearLayout>
+
+    <ListView android:id="@+id/survey"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:fadingEdge="none"
+            android:divider="@null"/>
+
+</LinearLayout>

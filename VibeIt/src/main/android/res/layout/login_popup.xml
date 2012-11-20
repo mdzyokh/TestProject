@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:vibeit="http://schemas.android.com/apk/res/com.vibeit"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/reset_password_panel_bg">
+
+        <com.vibeit.widget.CustomFontTextView
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/reset_password_title_bg"
+                android:gravity="center"
+                android:text="LOG IN TO USE THIS FEATURE"
+                vibeit:typeface="ArialRoundedMTBold.ttf"
+                vibeit:textStrokeColor="@color/textStrokeColor"
+                vibeit:textStrokeWidth="1dp"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:shadowColor="#f89162"
+                android:shadowDx="0.0"
+                android:shadowDy="1"
+                android:shadowRadius="0.5"/>
+
+        <com.vibeit.widget.CustomFontTextView
+                android:id="@+id/info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@id/title"
+                vibeit:typeface="Helvetica_Oblique.ttf"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"
+                android:shadowColor="#922e06"
+                android:shadowDx="0.0"
+                android:shadowDy="1"
+                android:shadowRadius="0.5"
+                android:text="You must be logged in to use this Vibe-It feature. Please select one of the options below."/>
+
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_below="@id/info">
+
+            <com.vibeit.widget.CustomFontButton
+                    style="@style/DefaultButton"
+                    android:id="@+id/btn_sign_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_green_selector"
+                    android:text="SIGN IN"
+                    android:layout_marginRight="5dp"/>
+
+            <com.vibeit.widget.CustomFontButton
+                    style="@style/DefaultButton"
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_orange_selector"
+                    android:text="CANCEL"
+                    android:layout_marginRight="5dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

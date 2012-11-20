@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.cyberwalkabout.common</groupId>
+    <artifactId>commons</artifactId>
+    <version>1.0</version>
+
+    <packaging>apklib</packaging>
+    <name>Commons</name>
+	
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>6</maven.compiler.source>
+        <maven.compiler.target>6</maven.compiler.target>
+        <platform.version>4.0.1.2</platform.version>
+		<android.api.level>14</android.api.level>
+		<ormlite.version>4.42</ormlite.version>
+        <signpost.version>1.2.1.2</signpost.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.google.android</groupId>
+            <artifactId>android</artifactId>
+            <version>${platform.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.android.maps</groupId>
+            <artifactId>maps</artifactId>
+            <version>${android.api.level}_r2</version>
+            <scope>provided</scope>
+        </dependency>
+		
+		<!-- SSO -->
+        <dependency>
+            <groupId>oauth.signpost</groupId>
+            <artifactId>signpost-core</artifactId>
+            <version>${signpost.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>oauth.signpost</groupId>
+            <artifactId>signpost-commonshttp4</artifactId>
+            <version>${signpost.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- ORM -->
+        <dependency>
+            <groupId>com.j256.ormlite</groupId>
+            <artifactId>ormlite-core</artifactId>
+            <version>${ormlite.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.j256.ormlite</groupId>
+            <artifactId>ormlite-android</artifactId>
+            <version>${ormlite.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+                <artifactId>android-maven-plugin</artifactId>
+                <version>3.3.2</version>
+                <configuration>
+                    <sdk>
+                        <path>${ANDROID_HOME}</path>
+                        <platform>14</platform>
+                    </sdk>
+                    <androidManifestFile>${project.basedir}/src/main/android/AndroidManifest.xml</androidManifestFile>
+                    <resourceDirectory>${project.basedir}/src/main/android/res</resourceDirectory>
+                    <assetsDirectory>${project.basedir}/src/main/android/assets</assetsDirectory>
+                    <nativeLibrariesDirectory>${project.basedir}/src/main/android/native</nativeLibrariesDirectory>
+                    <resourceOverlayDirectory>${project.basedir}/src/main/android/overlay</resourceOverlayDirectory>
+
+                    <!-- Read the Android Maven plugin documentation about these settings -->
+                    <!--<deleteConflictingFiles>true</deleteConflictingFiles>-->
+                    <undeployBeforeDeploy>true</undeployBeforeDeploy>
+
+                </configuration>
+                <extensions>true</extensions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

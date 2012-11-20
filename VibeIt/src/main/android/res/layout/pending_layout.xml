@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:padding="10dp"
+              android:gravity="center">
+    <ProgressBar
+            style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:id="@+id/progress"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+</LinearLayout>

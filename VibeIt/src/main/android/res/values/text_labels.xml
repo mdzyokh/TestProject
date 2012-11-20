@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--SIGN IN SCREEN-->
+    <string name="your_vibes">YOUR VIBES</string>
+    <string name="our_business">OUR BUSINESS</string>
+    <string name="btn_connect_with_facebook">SIGN IN WITH FACEBOOK</string>
+    <string name="btn_sign_in_with_email">SIGN IN WITH EMAIL</string>
+    <string name="btn_create_account">CREATE ACCOUNT</string>
+
+    <!--SIGN IN WITH EMAIL SCREEN-->
+    <string name="btn_forgot_password">\nForgot?</string>
+    <string name="email_field_hint">Email Address</string>
+    <string name="password_field_hint">Password</string>
+
+    <!--CREATE ACCOUNT SCREEN-->
+    <string name="btn_continue">CONTINUE</string>
+    <string name="first_name_field_hint">First Name</string>
+    <string name="last_name_field_hint">Last Name</string>
+    <string name="confirm_password_field_hint">Confirm password</string>
+    <string name="choose_gender_promt">Choose gender:</string>
+    <string name="choose_age_promt">Select an age range please:</string>
+    <string name="ok_to_contact_you">Is it ok to contact you?</string>
+    <string name="info">Tells business owners whether it is okay to contact you in response to a low vibe rating. Your
+        information will not shared otherwise.
+    </string>
+
+    <!--HOME SCREEN-->
+    <string name="btn_login">log in</string>
+
+    <!--COMPANY DETAILS SCREEN-->
+    <string name="btn_back">back</string>
+    <string name="btn_vibe_this_business">VIBE THIS BUSINESS</string>
+
+    <!--LOCAL VIBES FILTER-->
+    <string-array name="distance">
+        <item>0.2\nmiles</item>
+        <item>1\nmile</item>
+        <item>5\nmiles</item>
+        <item>10\nmiles</item>
+        <item>20\nmiles</item>
+        <item>All\nradius</item>
+    </string-array>
+
+    <string-array name="overall_vibe_rating">
+        <item>1\nstar</item>
+        <item>2\nstars</item>
+        <item>3\nstars</item>
+        <item>4\nstars</item>
+        <item>5\nstars</item>
+        <item>Any\nrating</item>
+    </string-array>
+
+    <string-array name="order_vibes_by">
+        <item>Distance\n</item>
+        <item>Most\nPopular</item>
+        <item>Value\n</item>
+        <item>Overall\nVibe</item>
+    </string-array>
+
+
+    <!--PROGRESS DIALOGS-->
+    <string name="loading_locations">Loading Locations...</string>
+    <string name="loading_location">Loading Location...</string>
+    <string name="loading_categories">Loading Categories...</string>
+    <string name="please_wait">Please Wait...</string>
+
+    <!--NETWORK-->
+    <string name="unable_to_connect_message">We\'re sorry, but the application was unable to connect with the server. Please check back shortly.</string>
+
+</resources>

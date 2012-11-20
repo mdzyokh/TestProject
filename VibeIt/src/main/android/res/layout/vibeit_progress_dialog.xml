@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:minWidth="250dp"
+              android:padding="15dp"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:background="@drawable/progress_dialog_bg">
+
+    <ProgressBar
+            style="@style/VibeitProgressBar"
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"/>
+
+
+    <com.vibeit.widget.CustomFontTextView
+            android:id="@+id/message"
+            style="@style/VibeitProgressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please wait ..."
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+</LinearLayout>

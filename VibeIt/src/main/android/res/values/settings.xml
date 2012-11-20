@@ -1,0 +1,13 @@
+<resources>
+    <string name="api_url">http://vibeit.orainteractive.com</string>
+    <!--Andrii Kovalov-->
+    <!--<string name="facebook_app_id">147989608679783</string>-->
+    <!--Maria Dzyokh-->
+    <string name="facebook_app_id">112824045441606</string>
+
+    <string name="twitter_api_key">Rt4mukmdvHNN6f21nSXVQ</string>
+    <string name="twitter_api_secret">Gpa8uCTqd7lQV7SPINboFp2OZ7H4ClejjCOSmB4kKw</string>
+
+    <string name="google_map_api_key">0i4BjoRmhu0VeuphtzIbe-Cza-1_RybizdGta2w</string>
+
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:vibeit="http://schemas.android.com/apk/res/com.vibeit"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:padding="10dp">
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_best_of_the_best"/>
+
+        <com.vibeit.widget.CustomFontTextView
+                android:id="@+id/filter_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                vibeit:typeface="HelveticaNeue_Bold.ttf"
+                android:text="Best of the Best Filter"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:paddingRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="16dp"
+                android:gravity="center"/>
+    </LinearLayout>
+
+    <View android:layout_width="fill_parent"
+          android:layout_height="3px"
+          android:background="@drawable/divider_filter_local_vibes"/>
+
+    <com.vibeit.widget.CustomFontTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            vibeit:typeface="HelveticaNeue_Bold.ttf"
+            android:text="Distance"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:paddingRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="left"
+            android:textSize="16dp"
+            android:padding="10dp"/>
+
+    <com.vibeit.widget.VibeFilter
+            android:id="@+id/distance_filter"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            vibeit:labels="@array/distance"
+            vibeit:values="@array/distance_values"
+            vibeit:defaultPosition="5"
+            android:layout_marginBottom="20dp"/>
+
+    <View android:layout_width="fill_parent"
+          android:layout_height="3px"
+          android:background="@drawable/divider_filter_local_vibes"/>
+
+
+    <com.vibeit.widget.CustomFontTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            vibeit:typeface="HelveticaNeue_Bold.ttf"
+            android:text="Categories"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:paddingRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="left"
+            android:textSize="16dp"
+            android:padding="10dp"/>
+
+    <View android:layout_width="fill_parent"
+          android:layout_height="3px"
+          android:background="@drawable/divider_filter_local_vibes"/>
+
+</LinearLayout>

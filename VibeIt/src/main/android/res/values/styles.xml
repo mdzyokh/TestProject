@@ -1,0 +1,259 @@
+<resources>
+    <style name="DefaultInputField">
+        <item name="android:background">@drawable/txt_field</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorHint">@color/medium_gray</item>
+        <item name="typeface">Helvetica.ttf</item>
+        <item name="android:gravity">top</item>
+        <item name="android:shadowColor">@android:color/white</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+
+    <style name="CommentInputField" parent="DefaultInputField">
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">40dp</item>
+    </style>
+
+    <style name="SearchInputField" parent="DefaultInputField">
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:background">@drawable/search_field</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:drawableLeft">@drawable/ic_search</item>
+    </style>
+
+    <style name="DefaultButton">
+        <item name="android:textColor">@color/default_btn_text_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16dp</item>
+        <item name="typeface">LubalinGraphStd_Demi.otf</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+
+    <style name="SlimButton" parent="DefaultButton">
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="HomeRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/home_screen_rating_star_bg</item>
+        <item name="android:minHeight">26dp</item>
+        <item name="android:maxHeight">52dp</item>
+        <item name="android:isIndicator">true</item>
+        <item name="android:max">5</item>
+    </style>
+
+    <style name="CommentRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/comment_rating_star_bg</item>
+        <item name="android:minHeight">18dp</item>
+        <item name="android:maxHeight">36dp</item>
+        <item name="android:isIndicator">true</item>
+        <item name="android:max">5</item>
+    </style>
+
+    <style name="CompanyDetailsRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/business_details_rating_star_bg</item>
+        <item name="android:minHeight">26dp</item>
+        <item name="android:maxHeight">52dp</item>
+        <item name="android:isIndicator">true</item>
+        <item name="android:max">5</item>
+    </style>
+
+    <style name="BigRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_star_bg</item>
+        <item name="android:minHeight">41dp</item>
+        <item name="android:maxHeight">81dp</item>
+        <item name="android:max">5</item>
+    </style>
+
+    <style name="YesNoSwitchStyle">
+        <item name="track">@drawable/yes_no_switch_track</item>
+        <item name="thumb">@drawable/switch_thumb</item>
+        <item name="switchTextAppearanceAttrib">@style/SwitchTextAppearance</item>
+        <item name="textOn"></item>
+        <item name="textOff"></item>
+        <item name="switchMinWidth">98dp</item>
+        <item name="switchMinHeight">41dp</item>
+        <item name="textOutsideTrack">false</item>
+        <item name="textOnThumb">false</item>
+        <item name="trackTextPadding">8dp</item>
+        <item name="switchPadding">6dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="OnOffSwitchStyle" parent="YesNoSwitchStyle">
+        <item name="track">@drawable/on_off_switch_track</item>
+    </style>
+
+    <style name="SwitchTextAppearance">
+        <item name="textColor">#FFeeFFee</item>
+        <item name="textColorHighlight">#FFeeFFee</item>
+        <item name="textColorHint">#FFeeFFee</item>
+        <item name="textColorLink">#FFeeFFee</item>
+        <item name="textSize">10dp</item>
+        <item name="textStyle">normal</item>
+    </style>
+
+    <style name="ForgotPasswordButton">
+        <item name="android:background">@drawable/btn_forgot_password_selector</item>
+        <item name="android:text">@string/btn_forgot_password</item>
+        <item name="typeface">LubalinGraphStd_Demi.otf</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/forgot_password_btn_text_color</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:shadowColor">#ffb20d</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+
+    <style name="RewardsIndicator">
+        <item name="typeface">HelveticaNeue_Bold.ttf</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/ic_reward_count</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#623403</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+
+    <style name="ActionBarTextButton">
+        <item name="android:background">@drawable/btn_blue_homescreen_selector</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="typeface">ArialRoundedMTBold.ttf</item>
+        <item name="android:shadowColor">#2a5976</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+
+
+    <!--COMPANY DETAILS SCREEN-->
+    <style name="CompanyNameTextAppearance">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="typeface">HelveticaNeue_Bold.ttf</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:shadowColor">#2a9ac4</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+
+    <style name="CompanyAddressTextAppearance">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="typeface">Helvetica.ttf</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:lineSpacingExtra">5dp</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+
+    <style name="VibesCountTextAppearance">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#9dd0f2</item>
+        <item name="typeface">ArialRoundedMTBold.ttf</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#88000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+
+    <!--RATING SCREEN (STEP1)-->
+    <style name="VenueNameTextAppearance">
+        <item name="android:singleLine">true</item>
+        <item name="typeface">HelveticaNeue_Bold.ttf</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#9b6229</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+
+    <style name="VenueNameTextAppearanceSmall" parent="VenueNameTextAppearance">
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="RatingCategoryTitleOrange">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/bottom_line_orange</item>
+        <item name="typeface">GillSans_Bold.ttf</item>
+        <item name="android:shadowColor">#ffffff</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+
+    <style name="RatingCategoryTitleGray" parent="RatingCategoryTitleOrange">
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <style name="BtnContinue">
+        <item name="android:text">Continue</item>
+        <item name="android:paddingRight">25dp</item>
+        <item name="android:paddingLeft">25dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18dp</item>
+        <item name="typeface">HelveticaNeue_Bold.ttf</item>
+        <item name="android:background">#55e2e2e2</item>
+        <item name="android:textColor">@drawable/button_text_color_selector</item>
+        <item name="android:shadowColor">#88FFFFFF</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+
+
+    <!--VIBEIT REWARD TEASER-->
+    <style name="RewardTeaserTitle">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="typeface">ArialRoundedMTBold.ttf</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="RewardTeaserText">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="typeface">Helvetica_Oblique.ttf</item>
+    </style>
+
+    <style name="VibeitProgressDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="VibeitProgressBar" parent="@android:style/Widget.ProgressBar">
+       <item name="android:indeterminateDrawable">@anim/progress_bar_drawable</item>
+    </style>
+
+    <style name="VibeitProgressText" parent="VenueNameTextAppearance">
+         <item name="android:textColor">#F0F302</item>
+    </style>
+
+</resources>

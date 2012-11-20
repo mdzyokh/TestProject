@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vibeit.widget.CustomFontCheckableTextView xmlns:android="http://schemas.android.com/apk/res/android"
+                                      xmlns:vibeit="http://schemas.android.com/apk/res/com.vibeit"
+                                      android:layout_width="fill_parent"
+                                      android:layout_height="wrap_content"
+                                      vibeit:typeface="HelveticaNeue_Bold.ttf"
+                                      android:textColor="@android:color/white"
+                                      android:textStyle="bold"
+                                      android:paddingRight="5dp"
+                                      android:layout_centerVertical="true"
+                                      android:layout_centerHorizontal="true"
+                                      android:gravity="center"
+                                      android:textSize="16dp"
+                                      android:padding="10dp"/>

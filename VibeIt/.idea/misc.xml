@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="android" url="file://$PROJECT_DIR$/../_lib AccordionVew" />
+    <file type="android" url="file://$PROJECT_DIR$/../_lib Commons" />
+    <file type="android" url="file://$PROJECT_DIR$/../_lib SlideExpandableListView" />
+    <file type="android" url="file://$PROJECT_DIR$/../_lib SlidingMenu" />
+    <file type="android" url="file://$PROJECT_DIR$/../_lib TwitterSDK" />
+    <file type="android" url="file://$PROJECT_DIR$/../_lib ViewPagerExtensions" />
+    <file type="android" url="file://$PROJECT_DIR$" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../_lib Commons/pom.xml" />
+        <option value="$PROJECT_DIR$/../_lib SlidingMenu/pom.xml" />
+        <option value="$PROJECT_DIR$/../_lib TwitterSDK/pom.xml" />
+        <option value="$PROJECT_DIR$/../_lib ViewPagerExtensions/pom.xml" />
+        <option value="$PROJECT_DIR$/../_lib AccordionVew/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectResources">
+    <default-html-doctype>http://www.w3.org/1999/xhtml</default-html-doctype>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.6" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="myConfigurationMap">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="branchUrls">
+                <list>
+                  <option value="https://svn3.xp-dev.com/svn/CyberWalkAbout-Android/VibeIt/branches" />
+                  <option value="https://svn3.xp-dev.com/svn/CyberWalkAbout-Android/VibeIt/tags" />
+                </list>
+              </option>
+              <option name="trunkUrl" value="https://svn3.xp-dev.com/svn/CyberWalkAbout-Android/VibeIt/trunk" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="mySupportsUserInfoFilter" value="true" />
+  </component>
+</project>
+

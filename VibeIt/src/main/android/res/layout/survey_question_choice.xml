@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vibeit.widget.CustomFontRadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+                                         xmlns:vibeit="http://schemas.android.com/apk/res/com.vibeit"
+                                         android:text="Weekly"
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:textSize="16dp"
+                                         android:textColor="#48413b"
+                                         android:button="@null"
+                                         vibeit:typeface="ArialRoundedMTBold.ttf"/>
+

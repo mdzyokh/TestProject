@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vibe It</string>
+
+
+    <string name="reedem_additional_information">
+        <b>Additional Information:</b>
+        This reward can be reedemed or used for cash value. Please show to our staff to receive your reward.\n\n
+        <i>This reward is provided for your vibe and survey completed on 12/30/2011. We appreciate your feedback, and
+            look forward to future vibes from you!
+        </i>
+    </string>
+    <string name="confirm_reward_additional_info">By pressing the confirm button below, you confirm this reward has been
+        used and will be removed from your "My rewards" list...
+    </string>
+
+    <!--LOCAL VIBES FILTER-->
+    <string-array name="distance_values">
+        <item>0.2</item>
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="overall_vibe_rating_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="order_vibes_by_values">
+        <item>distance</item>
+        <item>most popular</item>
+        <item>value</item>
+        <item>overall vibe</item>
+    </string-array>
+
+    <!-- CREATE ACCOUNT -->
+    <string-array name="gender_list">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <!-- VALIDATION -->
+    <string name="email_required">Email is required</string>
+    <string name="password_required">Password is required</string>
+    <string name="first_name_required">First name is required</string>
+    <string name="Last_name_required">Last name is required</string>
+    <string name="wrong_email_format">Wrong email format</string>
+
+</resources>

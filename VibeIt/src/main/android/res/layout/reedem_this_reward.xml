@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:vibeit="http://schemas.android.com/apk/res/com.vibeit"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/blue_background">
+
+    <include android:id="@+id/top_panel"
+             layout="@layout/top_panel"/>
+
+    <include android:id="@+id/company_info"
+             layout="@layout/company_info"
+             android:layout_below="@id/top_panel"/>
+
+    <include android:id="@+id/bottom_line"
+             layout="@layout/footer_cap"/>
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:background="#e4e4e4"
+                  android:layout_below="@id/company_info"
+                  android:layout_above="@id/bottom_line"
+                  android:orientation="vertical"
+                  android:padding="5dp">
+
+        <com.vibeit.widget.CustomFontTextView
+                android:id="@+id/additional_information"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                vibeit:typeface="HelveticaNeue-Bold.otf"
+                android:textColor="@color/list_item_text_color"
+                android:background="@drawable/bkg_additional_information"
+                android:text="@string/reedem_additional_information"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:textSize="12dp"/>
+
+
+        <com.vibeit.widget.CustomFontButton
+                android:id="@+id/btn_reedem_this_award"
+                style="@style/DefaultButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="REEDEM THIS REWARD"
+                android:background="@drawable/btn_orange_selector"
+                android:layout_below="@id/company_info"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/ic_vibe_this_business"/>
+    </LinearLayout>
+
+</RelativeLayout>

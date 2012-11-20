@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:vibeit="http://schemas.android.com/apk/res/com.vibeit"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_below="@id/top_panel"
+              android:background="@drawable/blue_background">
+
+    <View android:id="@+id/top_divider"
+          android:layout_height="2px"
+          android:layout_width="fill_parent"
+          android:background="@drawable/divider_vendor_top"
+          android:layout_marginRight="10dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="10dp"/>
+
+
+    <RelativeLayout android:id="@+id/company_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+        <LinearLayout android:id="@+id/logo_container"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/bkg_venue_details"
+                      android:layout_alignParentLeft="true"
+                      android:layout_marginRight="10dp"
+                      android:padding="10dp">
+
+            <ImageView android:id="@+id/company_logo"
+                       android:layout_width="85dp"
+                       android:layout_height="85dp"
+                       android:src="@drawable/location_logo_placeholder"
+                       android:background="@android:color/white"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_toRightOf="@id/logo_container"
+                      android:layout_centerVertical="true">
+
+            <com.vibeit.widget.CustomFontTextView
+                    android:id="@+id/company_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lighthouse Coffee Shop"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    vibeit:typeface="HelveticaNeue_Bold.ttf"
+                    android:maxLines="2"
+                    android:ellipsize="marquee"
+                    android:shadowColor="#2a9ac4"
+                    android:shadowDx="0"
+                    android:shadowDy="1"
+                    android:shadowRadius="0.5"/>
+
+            <com.vibeit.widget.CustomFontTextView
+                    android:id="@+id/company_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="510 Tuttle Creek Blvd. Manhattan, KS 6502"
+                    android:textSize="14dp"
+                    android:textColor="@android:color/white"
+                    android:maxLines="2"
+                    android:lineSpacingExtra="5dp"
+                    android:ellipsize="marquee"
+                    vibeit:typeface="Helvetica.ttf"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View android:id="@+id/bottom_divider"
+          android:layout_height="2px"
+          android:layout_width="fill_parent"
+          android:background="@drawable/divider_vendor_under"
+          android:layout_marginRight="10dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginBottom="10dp"/>
+</LinearLayout>

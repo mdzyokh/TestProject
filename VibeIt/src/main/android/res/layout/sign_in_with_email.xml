@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:vibeit="http://schemas.android.com/apk/res/com.vibeit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+           >
+
+        <!-- android:background="@drawable/blue_background"-->
+
+        <ImageView
+                android:visibility="invisible"
+                android:id="@+id/logo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:padding="10dp"
+                android:src="@drawable/logo"
+                android:contentDescription="logo"/>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/logo"
+                android:padding="10dp"
+                android:background="@color/bottom_background">
+
+            <com.vibeit.widget.CustomFontButton
+                    android:id="@+id/btn_forgot_password"
+                    style="@style/ForgotPasswordButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/form"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-30dp"/>
+
+            <LinearLayout
+                    android:id="@+id/form"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/form_background"
+                    android:layout_marginTop="5dp">
+
+                <com.vibeit.widget.CustomFontEditText
+                        android:id="@+id/email"
+                        style="@style/DefaultInputField"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:inputType="textEmailAddress"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:hint="@string/email_field_hint"/>
+
+                <View android:layout_width="fill_parent"
+                      android:layout_height="2px"
+                      android:layout_margin="5dp"
+                      android:background="@drawable/line_horizontal"/>
+
+                <com.vibeit.widget.CustomFontEditText
+                        android:id="@+id/password"
+                        style="@style/DefaultInputField"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:password="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:hint="@string/password_field_hint"/>
+            </LinearLayout>
+
+            <View
+                    android:id="@+id/left_chain"
+                    android:layout_width="10dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/form"
+                    android:layout_marginLeft="40dp"/>
+
+            <View
+                    android:id="@+id/right_chain"
+                    android:layout_width="10dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/form"
+                    android:layout_marginRight="40dp"/>
+
+            <com.vibeit.widget.CustomFontButton
+                    style="@style/DefaultButton"
+                    android:id="@+id/btn_sign_in_with_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/left_chain"
+                    android:layout_marginTop="-2dp"
+                    android:background="@drawable/btn_red_selector"
+                    android:text="@string/btn_sign_in_with_email"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+        </RelativeLayout>
+
+        <Button android:id="@+id/btn_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logo"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_close_selector"/>
+
+    </RelativeLayout>
+
+</ScrollView>
+
