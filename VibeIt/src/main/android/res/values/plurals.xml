@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <plurals name="vibesCount">
-        <item quantity="zero">no vibes yet</item>
-        <item quantity="one">(%d vibe)</item>
-        <item quantity="other">(%d vibes)</item>
-    </plurals>
-</resources>
